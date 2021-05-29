@@ -46,6 +46,11 @@ h1 {
 }
 
 .container {
+	text-align: center;
+	width: 95%;
+}
+
+.container-main {
 	background: var(--ctn-background);
 	text-align: center;
 	width: 95%;
