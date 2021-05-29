@@ -20,7 +20,7 @@ function displayMsg() {
 	if (count >= 20) {
 		message.textContent = 'Stop We are at Capacity'
 		plusBtn.disabled = true
-	} else if (count < 1) {
+	} else if (count < 0) {
 		message.textContent = 'Nobody is Here'
 		minusBtn.disabled = true
 		plusBtn.disabled = false
@@ -38,9 +38,13 @@ function increaseCount() {
 }
 
 function decreaseCount() {
-	count -= 1
-	countEl.textContent = count
-	displayMsg()
+	if (count === 0) {
+		minusBtn.disabled = true
+	} else {
+		count -= 1
+		countEl.textContent = count
+		displayMsg()
+	}
 }
 
 function reset() {
