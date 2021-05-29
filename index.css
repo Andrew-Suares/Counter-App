@@ -41,6 +41,10 @@ h1 {
 	color: #fff;
 }
 
+.title {
+	text-align: center;
+}
+
 .container {
 	background: var(--ctn-background);
 	text-align: center;
